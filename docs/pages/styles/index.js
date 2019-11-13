@@ -1,27 +1,22 @@
-import React, { Fragment } from 'react';
-import Helmet from 'react-helmet';
-import md from '../../markdown/renderer';
-import ExampleWrapper from '../../ExampleWrapper';
-import {
-  StyledSingle,
-  StyledMulti,
-  Theme,
-  StyleCompositionExample,
-} from '../../examples';
-import { ColorSample } from '../../styled-components';
-import { defaultTheme } from 'react-select';
+import React, { Fragment } from "react";
+import Helmet from "react-helmet";
+import md from "../../markdown/renderer";
+import ExampleWrapper from "../../ExampleWrapper";
+import { StyledSingle, StyledMulti, Theme, StyleCompositionExample } from "../../examples";
+import { ColorSample } from "../../styled-components";
+import { defaultTheme } from "react-select";
 
 export default function Styles() {
-  return (
-    <Fragment>
-      <Helmet>
-        <title>Styles - React Select</title>
-        <meta
-          name="description"
-          content="React-Select offers a flexible, light-weight styling framework which is a thin abstraction over simple javascript objects"
-        />
-      </Helmet>
-      {md`
+    return (
+        <Fragment>
+            <Helmet>
+                <title>Styles - React Select</title>
+                <meta
+                    name="description"
+                    content="React-Select offers a flexible, light-weight styling framework which is a thin abstraction over simple javascript objects"
+                />
+            </Helmet>
+            {md`
     # Styles
 
     React-Select offers a flexible, light-weight styling framework which is
@@ -109,23 +104,23 @@ export default function Styles() {
       ~~~
 
       ${(
-        <ExampleWrapper
-          label="Customised Styles for Single Select"
-          urlPath="docs/examples/StyledSingle.js"
-          raw={require('!!raw-loader!../../examples/StyledSingle.js')}
-        >
-          <StyledSingle />
-        </ExampleWrapper>
+          <ExampleWrapper
+              label="Customised Styles for Single Select"
+              urlPath="docs/examples/StyledSingle.js"
+              raw={require("!!raw-loader!../../examples/StyledSingle.js")}
+          >
+              <StyledSingle />
+          </ExampleWrapper>
       )}
 
       ${(
-        <ExampleWrapper
-          label="Customised styles for Multi Select"
-          urlPath="docs/examples/StyledMulti.js"
-          raw={require('!!raw-loader!../../examples/StyledMulti.js')}
-        >
-          <StyledMulti />
-        </ExampleWrapper>
+          <ExampleWrapper
+              label="Customised styles for Multi Select"
+              urlPath="docs/examples/StyledMulti.js"
+              raw={require("!!raw-loader!../../examples/StyledMulti.js")}
+          >
+              <StyledMulti />
+          </ExampleWrapper>
       )}
 
     ## cx and custom Components
@@ -186,13 +181,13 @@ export default function Styles() {
     ~~~
 
     ${(
-      <ExampleWrapper
-        label="Style composition for custom components"
-        urlPath="docs/examples/StyleCompositionExample.js"
-        raw={require('!!raw-loader!../../examples/StyleCompositionExample.js')}
-      >
-        <StyleCompositionExample />
-      </ExampleWrapper>
+        <ExampleWrapper
+            label="Style composition for custom components"
+            urlPath="docs/examples/StyleCompositionExample.js"
+            raw={require("!!raw-loader!../../examples/StyleCompositionExample.js")}
+        >
+            <StyleCompositionExample />
+        </ExampleWrapper>
     )}
 
     ## Using classNames
@@ -230,26 +225,26 @@ export default function Styles() {
     The \`theme\` object is available for the \`styles\` functions as well.
 
     ${(
-      <ExampleWrapper
-        label="Customised theme"
-        urlPath="docs/examples/Theme.js"
-        raw={require('!!raw-loader!../../examples/Theme.js')}
-      >
-        <Theme />
-      </ExampleWrapper>
+        <ExampleWrapper
+            label="Customised theme"
+            urlPath="docs/examples/Theme.js"
+            raw={require("!!raw-loader!../../examples/Theme.js")}
+        >
+            <Theme />
+        </ExampleWrapper>
     )}
 
     ###### Theme colors
 
     ${(
-      <div css={{ marginTop: '1em' }}>
-        {Object.keys(defaultTheme.colors).map(key => (
-          <ColorSample key={key} name={key} color={defaultTheme.colors[key]} />
-        ))}
-      </div>
+        <div css={{ marginTop: "1em" }}>
+            {Object.keys(defaultTheme.colors).map(key => (
+                <ColorSample key={key} name={key} color={defaultTheme.colors[key]} />
+            ))}
+        </div>
     )}
 
     `}
-    </Fragment>
-  );
+        </Fragment>
+    );
 }

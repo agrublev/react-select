@@ -5,6 +5,25 @@
   "description": "A Select control built with and for ReactJS",
   "author": "Jed Watson",
   "license": "MIT",
+  "scripts": {
+    "build": "preconstruct build",
+    "watch": "preconstruct watch",
+    "coveralls": "cat coverage/lcov.info | coveralls",
+    "lint": "eslint .",
+    "start": "cd docs && yarn start",
+    "build:docs": "cd docs && yarn build:docs",
+    "fresh": "rm -rf node_modules && yarn install",
+    "test": "npm run test:jest && npm run test:cypress",
+    "test:jest": "jest --coverage",
+    "e2e": "concurrently --kill-others --success=first --names 'SERVER,E2E' 'yarn start --progress=false --no-info' 'yarn test:cypress'",
+    "test:cypress": "cypress run --spec ./cypress/integration/select_spec.js",
+    "test:cypress-watch": "node ./node_modules/.bin/cypress open",
+    "precommit": "flow check && lint-staged",
+    "postinstall": "preconstruct dev && bolt-check",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "yarn build && changeset publish"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/JedWatson/react-select.git"
@@ -83,25 +102,7 @@
     "webpack-cli": "^3.3.1",
     "webpack-dev-server": "^3.3.1"
   },
-  "scripts": {
-    "build": "preconstruct build",
-    "watch": "preconstruct watch",
-    "coveralls": "cat coverage/lcov.info | coveralls",
-    "lint": "eslint .",
-    "start": "cd docs && yarn start",
-    "build:docs": "cd docs && yarn build:docs",
-    "fresh": "rm -rf node_modules && yarn install",
-    "test": "npm run test:jest && npm run test:cypress",
-    "test:jest": "jest --coverage",
-    "e2e": "concurrently --kill-others --success=first --names 'SERVER,E2E' 'yarn start --progress=false --no-info' 'yarn test:cypress'",
-    "test:cypress": "cypress run --spec ./cypress/integration/select_spec.js",
-    "test:cypress-watch": "node ./node_modules/.bin/cypress open",
-    "precommit": "flow check && lint-staged",
-    "postinstall": "preconstruct dev && bolt-check",
-    "changeset": "changeset",
-    "version-packages": "changeset version",
-    "release": "yarn build && changeset publish"
-  },
+
   "files": [
     "dist",
     "src"

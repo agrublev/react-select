@@ -1,23 +1,23 @@
 // @flow
 
-import React from 'react';
-import ExampleWrapper from '../../ExampleWrapper';
-import md from '../../markdown/renderer';
+import React from "react";
+import ExampleWrapper from "../../ExampleWrapper";
+import md from "../../markdown/renderer";
 import {
-  AsyncCallbacks,
-  AsyncPromises,
-  AnimatedMulti,
-  BasicSingle,
-  BasicGrouped,
-  BasicMulti,
-  CreatableSingle,
-  FixedOptions,
-  StyledMulti,
-  StyledSingle,
-} from '../../examples';
+    AsyncCallbacks,
+    AsyncPromises,
+    AnimatedMulti,
+    BasicSingle,
+    BasicGrouped,
+    BasicMulti,
+    CreatableSingle,
+    FixedOptions,
+    StyledMulti,
+    StyledSingle
+} from "../../examples";
 
 export default function Home() {
-  return md`
+    return md`
   # Welcome
 
   Each of the examples below is an interactive example of react-select.
@@ -31,23 +31,23 @@ export default function Home() {
   To contribute, or open an issue, check out the [source code on GitHub](https://github.com/JedWatson/react-select).
 
   ${(
-    <ExampleWrapper
-      label="Single"
-      urlPath="docs/examples/BasicSingle.js"
-      raw={require('!!raw-loader!../../examples/BasicSingle.js')}
-    >
-      <BasicSingle />
-    </ExampleWrapper>
+      <ExampleWrapper
+          label="Single"
+          urlPath="docs/examples/BasicSingle.js"
+          raw={require("!!raw-loader!../../examples/BasicSingle.js")}
+      >
+          <BasicSingle />
+      </ExampleWrapper>
   )}
 
   ${(
-    <ExampleWrapper
-      label="Multi"
-      urlPath="docs/examples/BasicMulti.js"
-      raw={require('!!raw-loader!../../examples/BasicMulti.js')}
-    >
-      <BasicMulti />
-    </ExampleWrapper>
+      <ExampleWrapper
+          label="Multi"
+          urlPath="docs/examples/BasicMulti.js"
+          raw={require("!!raw-loader!../../examples/BasicMulti.js")}
+      >
+          <BasicMulti />
+      </ExampleWrapper>
   )}
 
   ## Getting Started
@@ -76,13 +76,13 @@ export default function Home() {
   ~~~
 
   ${(
-    <ExampleWrapper
-      label="Grouped"
-      urlPath="docs/examples/BasicGrouped.js"
-      raw={require('!!raw-loader!../../examples/BasicGrouped.js')}
-    >
-      <BasicGrouped />
-    </ExampleWrapper>
+      <ExampleWrapper
+          label="Grouped"
+          urlPath="docs/examples/BasicGrouped.js"
+          raw={require("!!raw-loader!../../examples/BasicGrouped.js")}
+      >
+          <BasicGrouped />
+      </ExampleWrapper>
   )}
 
   ## Animated Components
@@ -97,13 +97,13 @@ export default function Home() {
   Remove the values below to see them in action.
 
   ${(
-    <ExampleWrapper
-      label="Animation"
-      urlPath="docs/examples/AnimatedMulti.js"
-      raw={require('!!raw-loader!../../examples/AnimatedMulti.js')}
-    >
-      <AnimatedMulti />
-    </ExampleWrapper>
+      <ExampleWrapper
+          label="Animation"
+          urlPath="docs/examples/AnimatedMulti.js"
+          raw={require("!!raw-loader!../../examples/AnimatedMulti.js")}
+      >
+          <AnimatedMulti />
+      </ExampleWrapper>
   )}
 
   ## Custom Styles
@@ -111,23 +111,23 @@ export default function Home() {
   Style individual components with custom css using the \`styles\` prop.
 
   ${(
-    <ExampleWrapper
-      label="Single"
-      urlPath="docs/examples/StyledSingle.js"
-      raw={require('!!raw-loader!../../examples/StyledSingle.js')}
-    >
-      <StyledSingle />
-    </ExampleWrapper>
+      <ExampleWrapper
+          label="Single"
+          urlPath="docs/examples/StyledSingle.js"
+          raw={require("!!raw-loader!../../examples/StyledSingle.js")}
+      >
+          <StyledSingle />
+      </ExampleWrapper>
   )}
 
   ${(
-    <ExampleWrapper
-      label="Multi Select"
-      urlPath="docs/examples/StyledMulti.js"
-      raw={require('!!raw-loader!../../examples/StyledMulti.js')}
-    >
-      <StyledMulti />
-    </ExampleWrapper>
+      <ExampleWrapper
+          label="Multi Select"
+          urlPath="docs/examples/StyledMulti.js"
+          raw={require("!!raw-loader!../../examples/StyledMulti.js")}
+      >
+          <StyledMulti />
+      </ExampleWrapper>
   )}
 
   You can see a full explanation of how to do this on the [styles](/styles) page.
@@ -140,23 +140,23 @@ export default function Home() {
   ~~~
 
   ${(
-    <ExampleWrapper
-      label="Callbacks"
-      urlPath="docs/examples/AsyncCallbacks.js"
-      raw={require('!!raw-loader!../../examples/AsyncCallbacks.js')}
-    >
-      <AsyncCallbacks />
-    </ExampleWrapper>
+      <ExampleWrapper
+          label="Callbacks"
+          urlPath="docs/examples/AsyncCallbacks.js"
+          raw={require("!!raw-loader!../../examples/AsyncCallbacks.js")}
+      >
+          <AsyncCallbacks />
+      </ExampleWrapper>
   )}
 
   ${(
-    <ExampleWrapper
-      label="Promises"
-      urlPath="docs/examples/AsyncPromises.js"
-      raw={require('!!raw-loader!../../examples/AsyncPromises.js')}
-    >
-      <AsyncPromises />
-    </ExampleWrapper>
+      <ExampleWrapper
+          label="Promises"
+          urlPath="docs/examples/AsyncPromises.js"
+          raw={require("!!raw-loader!../../examples/AsyncPromises.js")}
+      >
+          <AsyncPromises />
+      </ExampleWrapper>
   )}
 
   You can see a full explanation of how to do this on the [async](/async) page.
@@ -169,13 +169,13 @@ export default function Home() {
   ~~~
 
   ${(
-    <ExampleWrapper
-      label="Creatable Example"
-      urlPath="docs/home/examples/CreatableSingle.js"
-      raw={require('!!raw-loader!../../examples/CreatableSingle.js')}
-    >
-      <CreatableSingle />
-    </ExampleWrapper>
+      <ExampleWrapper
+          label="Creatable Example"
+          urlPath="docs/home/examples/CreatableSingle.js"
+          raw={require("!!raw-loader!../../examples/CreatableSingle.js")}
+      >
+          <CreatableSingle />
+      </ExampleWrapper>
   )}
 
   You can see a full explanation of how to do this on the [creatable](/creatable) page.
@@ -183,13 +183,13 @@ export default function Home() {
   # Fixed Options
 
   ${(
-    <ExampleWrapper
-      label="Fixed Options Example"
-      urlPath="docs/home/examples/FixedOptions.js"
-      raw={require('!!raw-loader!../../examples/FixedOptions.js')}
-    >
-      <FixedOptions />
-    </ExampleWrapper>
+      <ExampleWrapper
+          label="Fixed Options Example"
+          urlPath="docs/home/examples/FixedOptions.js"
+          raw={require("!!raw-loader!../../examples/FixedOptions.js")}
+      >
+          <FixedOptions />
+      </ExampleWrapper>
   )}
 `;
 }
