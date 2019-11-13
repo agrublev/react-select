@@ -1,9 +1,9 @@
 {
-  "main": "dist/react-select.cjs.js",
-  "module": "dist/react-select.esm.js",
+  "main": "dist/fc-react-select.cjs.js",
+  "module": "dist/fc-react-select.esm.js",
   "browser": {
-    "./dist/react-select.cjs.js": "./dist/react-select.browser.cjs.js",
-    "./dist/react-select.esm.js": "./dist/react-select.browser.esm.js"
+    "./dist/fc-react-select.cjs.js": "./dist/fc-react-select.browser.cjs.js",
+    "./dist/fc-react-select.esm.js": "./dist/fc-react-select.browser.esm.js"
   },
   "preconstruct": {
     "source": "../src/Select"

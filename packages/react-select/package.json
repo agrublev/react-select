@@ -1,9 +1,9 @@
 {
-    "name": "react-select",
+    "name": "fc-react-select",
     "version": "4.0.0",
     "description": "A Select control built with and for ReactJS",
-    "main": "dist/react-select.cjs.js",
-    "module": "dist/react-select.esm.js",
+    "main": "dist/fc-react-select.cjs.js",
+    "module": "dist/fc-react-select.esm.js",
     "sideEffects": false,
     "author": "Jed Watson",
     "license": "MIT",
@@ -63,7 +63,7 @@
         ]
     },
     "browser": {
-        "./dist/react-select.cjs.js": "./dist/react-select.browser.cjs.js",
-        "./dist/react-select.esm.js": "./dist/react-select.browser.esm.js"
+        "./dist/fc-react-select.cjs.js": "./dist/fc-react-select.browser.cjs.js",
+        "./dist/fc-react-select.esm.js": "./dist/fc-react-select.browser.esm.js"
     }
 }
