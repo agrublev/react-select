@@ -1,5 +1,11 @@
 # @react-select/docs
 
+## 4.0.0
+
+### Major Changes
+
+-   [19f7df0e](https://github.com/JedWatson/react-select/commit/19f7df0e9001689dcec2b71ca19fdf6a749d1047) Thanks [@agrublev](https://github.com/agrublev)! - YEAH!
+
 ## 3.0.0
 
 ### Major Changes

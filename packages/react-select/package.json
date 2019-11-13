@@ -1,11 +1,11 @@
 {
     "name": "fc-react-select",
-    "version": "4.0.0",
+    "version": "5.0.0",
     "description": "A Select control built with and for ReactJS",
     "main": "dist/fc-react-select.cjs.js",
     "module": "dist/fc-react-select.esm.js",
     "sideEffects": false,
-    "author": "Jed Watson",
+    "author": "ag",
     "license": "MIT",
     "repository": {
         "type": "git",
