@@ -1,6 +1,6 @@
 {
     "name": "fc-react-select",
-    "version": "5.0.0",
+    "version": "5.5.3",
     "description": "A Select control built with and for ReactJS",
     "main": "dist/fc-react-select.cjs.js",
     "module": "dist/fc-react-select.esm.js",
@@ -13,6 +13,13 @@
     },
     "dependencies": {
         "@babel/runtime": "^7.4.4",
+        "@babel/cli": "^7.0.0",
+        "@babel/core": "^7.2.2",
+        "@babel/plugin-proposal-class-properties": "^7.7.0",
+        "@babel/polyfill": "^7.0.0",
+        "@babel/preset-env": "^7.0.0",
+        "@babel/preset-flow": "^7.0.0",
+        "@babel/preset-react": "^7.0.0",
         "@emotion/cache": "^10.0.9",
         "@emotion/core": "^10.0.9",
         "@emotion/css": "^10.0.9",
@@ -22,7 +29,6 @@
         "react-transition-group": "^4.3.0"
     },
     "devDependencies": {
-        "cypress": "^1.4.1",
         "enzyme": "^3.8.0",
         "enzyme-to-json": "^3.3.0",
         "jest-in-case": "^1.0.2",
